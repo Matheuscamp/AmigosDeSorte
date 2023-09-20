@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Ysabeau+Infant:wght@300;500;600;700&display=swap");
+/* Estilos CSS para a tela Home */
 body {
   font-family: "Oswald", sans-serif;
-  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5; /* Cor de fundo */
 }
+
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #5d3891; /* Cor de fundo do cabeçalho */
   color: white;
   text-align: center;
@@ -27,26 +30,49 @@ h1 {
   letter-spacing: 6px;
   margin-top: -20px;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 73vh;
+.icon-midia {
+  width: 24px;
+  height: 23px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
-form {
+main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alinhamento vertical */
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  min-height: 80vh;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
-  width: 300px;
-  margin-top: 20px;
+  max-width: 600px; /* Aumento da largura máxima */
+  background-color: white;
+  margin: 20px; /* Espaçamento externo */
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Espaçamento inferior aumentado */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #5d3891; /* Cor do título */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 label {
@@ -57,7 +83,7 @@ label {
 
 .input {
   border: 2px solid transparent;
-  width: 17em;
+  width: 12em;
   height: 2.5em;
   padding-left: 0.8em;
   outline: none;
@@ -65,6 +91,7 @@ label {
   background-color: #f3f3f3;
   border-radius: 10px;
   transition: all 0.5s;
+  margin-right: 18px;
 }
 
 .input:hover,
@@ -88,7 +115,6 @@ button {
   transition: all 250ms;
   overflow: hidden;
   cursor: pointer;
-  margin-top: 20px;
 }
 
 button::before {
