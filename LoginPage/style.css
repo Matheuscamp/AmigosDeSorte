@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Ysabeau+Infant:wght@300;500;600;700&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5d3891; /* Cor de fundo do cabeçalho */
+  color: white;
+  text-align: center;
+  padding: 13px 0; /* Espaçamento superior e inferior aumentado */
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+}
+.subtitle {
+  margin: 0;
+  padding: 0;
+  color: #ff9109;
+  font-size: 54px;
+  letter-spacing: 6px;
+  margin-top: -20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #5d3891; /* Cor do rótulo */
+}
+
+.input {
+  border: 2px solid transparent;
+  width: 17em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #5d3891;
+  box-shadow: 0px 0px 0px 7px #5d389152;
+  background-color: white;
+}
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #f5f5f5;
+  z-index: 1;
+  background: #5d3891;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #ff9109;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+}

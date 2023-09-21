@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amigos De SORTE</title>
+    <link rel="shortcut icon" type="image/jpg" href="./imgs/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="title-subtitle">
+        <h1>Amigos De</h1>
+        <p class="subtitle">SORTE</p>
+      </div>
+      <div class="social-midia">
+        <img class="icon-midia" src="./imgs/instagram.png" alt="instagram" />
+        <img class="icon-midia" src="./imgs/whatsapp.png" alt="whatsapp" />
+        <img class="icon-midia" src="./imgs/twitter.png" alt="twitter" />
+        <img class="icon-midia" src="./imgs/facebook.png" alt="facebook" />
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <img
+          src="./imgs/2023-porsche-911-gt3-rs-teaser-image.jpg"
+          alt="Imagem da Rifa"
+        />
+        <h2>Carro dos SONHOS!</h2>
+        <p>Valor: R$ <span id="valorRifa">0.75</span></p>
+        <!-- Valor da rifa -->
+        <label for="quantidadeNumeros">Quantidade de Números:</label>
+        <input
+          class="input"
+          type="number"
+          id="quantidadeNumeros"
+          name="quantidadeNumeros"
+          min="1"
+          value="1"
+          oninput="atualizarValorAPagar()"
+          required
+        />
+        <button id="pagar">Pagar</button>
+        <p>Valor a Pagar: R$ <span id="valorAPagar">0.75</span></p>
+        <!-- Valor a pagar -->
+      </div>
+
+      <!-- Campo de pesquisa -->
+      <div class="pesquisa">
+        <label for="numeroPesquisa">Pesquisar Número:</label>
+        <input
+          type="number"
+          id="numeroPesquisa"
+          name="numeroPesquisa"
+          min="0"
+          max="999999"
+        />
+        <button id="pesquisar">Pesquisar</button>
+        <p id="resultadoPesquisa"></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
