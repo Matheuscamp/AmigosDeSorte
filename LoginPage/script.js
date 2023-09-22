@@ -9,7 +9,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
   if (storedPassword === loginPassword) {
     alert("Login bem-sucedido!");
     document.getElementById("login-form").reset();
-    window.location.href = "../home.html"; // Redireciona para outra página após o login
+    window.location.href = "../index.html"; // Redireciona para outra página após o login
   } else {
     alert("Nome de usuário ou senha incorretos. Tente novamente.");
   }
